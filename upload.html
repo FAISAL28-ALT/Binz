@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Video Uploader & Z Coins</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .loader {
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #3498db;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      animation: spin 1s linear infinite;
+      display: inline-block;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg);}
+      100% { transform: rotate(360deg);}
+    }
+    nav a {
+      transition: transform 0.2s ease;
+    }
+    nav a:hover {
+      transform: scale(1.15);
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-blue-100 via-white to-green-100 p-4">
+
+  <!-- Enhanced Navbar -->
+  <header class="bg-white shadow-lg rounded-xl mb-6 px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center space-x-4">
+      <img src="Images/my-logo.png" alt="Logo" class="h-10 w-auto">
+    </div>
+    <nav class="flex space-x-20">
+      <a href="home-page.html" class="text-black-600 hover:text-green-800 font-medium">Home</a>
+      <a href="Scrap.html" class="text-black-600 hover:text-green-800 font-medium">Scrap</a>
+      <a href="upload.html" class="text-black-600 hover:text-green-800 font-medium">Earn Coins</a>
+      <a href="#" class="text-black-600 hover:text-green-800 font-medium">Service</a>
+    </nav>
+    <div class="flex items-center space-x-4">
+      <div class="relative">
+        <img src="Images/Z-coin.png" alt="Z Coin" class="h-6">
+        <span id="coin" class="absolute -top-2 -right-2 bg-yellow-400 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center">5</span>
+      </div>
+      <div class="flex items-center space-x-2">
+        <img src="Images/pofile.png" alt="Profile" class="h-8 w-8 rounded-full">
+        <div class="text-sm">
+          <div class="text-gray-500">Welcome,</div>
+          <div id="username" class="font-semibold text-gray-800">Ahsan</div>
+        </div>
+      </div>
+      <button id="logoutBtn" onclick="window.location.href='sign.html';">
+        <img src="Images/st-removebg-preview.png" alt="Exit" class="h-6">
+      </button>
+    </div>
+  </header>
+
+  <!-- Upload Box -->
+  <div class="w-full max-w-md bg-white rounded-2xl shadow-xl p-6 mx-auto">
+    <h2 class="text-3xl font-extrabold text-center mb-6 text-gray-800 flex items-center justify-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-blue-600" viewBox="0 0 20 20" fill="currentColor">
+        <path d="M17.293 6.707a1 1 0 00-1.414 0L10 12.586 4.121 6.707a1 1 0 00-1.414 1.414l6.586 6.586a1 1 0 001.414 0l6.586-6.586a1 1 0 000-1.414z" />
+      </svg>
+      Upload Video & Earn Z Coins
+    </h2>
+
+    <input type="text" id="name" placeholder="Enter your name"
+      class="w-full p-3 mb-4 border rounded-xl text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400"/>
+    <input type="email" id="email" placeholder="Enter your email"
+      class="w-full p-3 mb-4 border rounded-xl text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400"/>
+    <input type="file" id="video" accept="video/*"
+      class="w-full p-3 mb-4 border rounded-xl text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400"/>
+
+    <button id="uploadBtn"
+      class="w-full text-lg py-3 rounded-xl bg-green-500 hover:bg-green-600 text-white font-semibold">Upload Video</button>
+
+    <div id="status" class="mt-5 text-blue-600 font-medium text-center min-h-[24px]"></div>
+    <div id="wallet" class="mt-3 font-semibold text-xl text-center text-green-700">Coins Rewarded: 0 Z Coins</div>
+  </div>
+
+  <script src="js.js"></script>
+
+</body>
+</html>

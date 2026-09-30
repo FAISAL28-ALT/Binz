@@ -1,0 +1,19 @@
+node_modules/
+.env
+*.log
+uploads/
+__pycache__/
+*.pyc
+
+# Python virtual environments
+myenv/
+yolo_env/
+venv/
+.venv/
+
+# ML model weights
+*.pt
+*.pth
+
+# Python cache
+.pytest_cache/

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raise a Ticket - Bin-Z</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url();
+            font-family: Arial, sans-serif;
+            background: url('ewaste-background.jpg') no-repeat center center/cover;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            min-width: 600px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h2 {
+            text-align: center;
+            color: #28a745;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 90%;
+            padding: 12px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            background: #222;
+            color: white;
+        }
+        input:focus, select:focus, textarea:focus {
+            border: 1px solid #28a745;
+            box-shadow: 0 0 5px #28a745;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(90deg, #28a745, #218838);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: linear-gradient(90deg, #218838, #28a745);
+            transform: scale(1.05);
+        }
+        .form-group {
+            position: relative;
+        }
+        .form-group i {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            color: #28a745;
+        }
+    </style>
+    <script>
+    function generateTicketID() {
+        return 'BZ-' + Math.floor(100000 + Math.random() * 900000);
+    }
+
+    function showAlert(event) {
+        event.preventDefault();
+        let ticketID = generateTicketID();
+        alert('Your ticket has been raised successfully!\nTicket ID: ' + ticketID);
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("ticketForm").addEventListener("submit", async function(event) {
+            event.preventDefault();
+
+            let ticketID = generateTicketID(); // Generate ticket ID here if needed for backend
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const ewasteType = document.getElementById("ewasteType").value;
+            const description = document.getElementById("description").value;
+
+            const response = await fetch("http://localhost:5000/submit-ticket", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ ticketID, name, email, ewasteType, description })
+            });
+
+            const result = await response.json();
+            alert('Your ticket has been raised successfully!\nTicket ID: ' + ticketID + '\n' + result.message);
+        });
+    });
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Raise a Ticket</h2>
+        <form onsubmit="showAlert(event)" style="margin-left: 26px;" id="ticketForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ewaste">Type of E-Waste</label>
+                <select id="ewasteType" name="ewaste" style=" width: 94%;">
+                    <option value="laptop">Laptop</option>
+                    <option value="mobile">Mobile Phone</option>
+                    <option value="battery">Battery</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+            </div>
+
+            <button type="submit">Raise Ticket</button>
+        </form>
+    </div>
+</body>
+</html>
+

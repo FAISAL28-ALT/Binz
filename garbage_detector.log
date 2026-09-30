@@ -1,0 +1,23 @@
+2025-09-29 09:48:08,042 - ERROR - Traceback (most recent call last):
+  File "f:\BinZ-Project\GarbageDetector\GarbageDetectorLive.py", line 136, in detect_garbage
+    model = YOLO("Weights/best.pt")
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python310\lib\site-packages\ultralytics\models\yolo\model.py", line 23, in __init__
+    super().__init__(model=model, task=task, verbose=verbose)
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python310\lib\site-packages\ultralytics\engine\model.py", line 148, in __init__
+    self._load(model, task=task)
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python310\lib\site-packages\ultralytics\engine\model.py", line 291, in _load
+    self.model, self.ckpt = attempt_load_one_weight(weights)
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python310\lib\site-packages\ultralytics\nn\tasks.py", line 905, in attempt_load_one_weight
+    ckpt, weight = torch_safe_load(weight)  # load ckpt
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python310\lib\site-packages\ultralytics\nn\tasks.py", line 832, in torch_safe_load
+    ckpt = torch.load(file, map_location="cpu")
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python310\lib\site-packages\ultralytics\utils\patches.py", line 86, in torch_load
+    return _torch_load(*args, **kwargs)
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\serialization.py", line 1425, in load
+    with _open_file_like(f, "rb") as opened_file:
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\serialization.py", line 751, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\serialization.py", line 732, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'Weights\\best.pt'
+

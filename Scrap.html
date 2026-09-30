@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recyclable Items</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+       body {
+    background: linear-gradient(to bottom, rgba(1, 106, 112, 0.2), #ffffff); /* Soft gradient */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   }
+   h2{
+    font-size: 3.5em;
+   }
+
+        .container {
+            position: relative;
+            top: 127px;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.2);
+        }
+        .card img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        .price {
+         color: rgba(1, 106, 112, 1); /* Dark teal color */
+         font-weight: bold;
+        }
+        .item-name {
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .info {
+            font-size: 12px;
+            color: #555;
+        }
+        .navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 1604px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    margin-left: 158px;
+    box-shadow: 0px 4px 10px  rgb(113, 181, 204);
+}
+.logo {
+    width: 218px;
+    height: 218px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+button{
+    border: none;
+    height: 61px;
+    /* width: 30px; */
+    font-size: large;
+    font-weight: 500;
+     font-family: 'Poppins', sans-serif;
+     border-radius: 15px;
+}
+.right-pot{
+    display: flex;
+    flex-direction: column;
+    height: 37px;
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 400px;
+    transition: all 0.3s;
+}
+.protfolio{
+    width: 37px;
+    height: 37px;
+}
+.welcome{
+font-size: small;
+font-family: 'Poppins', sans-serif;
+height: 17px;
+}
+.name{
+    font-size: medium;
+    font-family: 'Poppins', sans-serif;
+    height: 20px;
+}
+.exit1{
+    margin-top: 10px;
+    width: 70px;
+    height: 70px;
+}
+.switch{
+    display: flex;
+    width: 435px;
+    height: 30px;
+    align-items: center;
+    margin-left: 370px;
+    justify-content: space-between;}
+    .tower , .exit1{
+        background-color: white;
+    }
+    .tower {
+    transition: all 0.3s;
+}
+.tower:hover {
+    color: rgba(1, 106, 112, 1);
+    transform: scale(1.3);}
+    button:hover {
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="Images/my-logo.png" alt="logo">
+        </div>
+        <div class="switch">
+            <button class="tower" onclick="window.location.href='home-page.html';">Home</button>
+            <button class="tower" onclick="window.location.href='Scrap.html';">Scrap</button>
+            <button class="tower" onclick="window.location.href='upload.html';">Earn Coins</button>
+            <button class="tower">Service</button>
+        </div>
+        <div class="profile">
+            <div class="protfolio">
+                <img src="Images/pofile.png" alt="profile">
+            </div>
+            <div class="right-pot">
+                <div class="welcome">
+                    Welcome, 
+                </div>
+                <div class="name" id="username">
+                    Ahsan
+                </div>
+            </div>
+
+        </div>
+        <div class="out">
+            <button id="logoutBtn" class="exit1" onclick="window.location.href='sign.html';"><img src="Images/st-removebg-preview.png" alt="exit"></button>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Normal Recyclables</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="Images/newspaper-removebg-preview.png" alt="Newspaper">
+                <div class="price">RS 14/KG</div>
+                <div class="item-name">NEWSPAPER</div>
+                <div class="info">Market rates dropped recently</div>
+            </div>
+            <div class="card">
+                <img src="Images/glass-bottle.png" alt="Glass Bottles">
+                <div class="price">RS 2/KG</div>
+                <div class="item-name">GLASS BOTTLES</div>
+                <div class="info">Accepted only with other scrap items</div>
+            </div>
+            <div class="card">
+                <img src="Images/copy-books.png" alt="Books">
+                <div class="price">RS 12/KG</div>
+                <div class="item-name">COPIES/BOOKS</div>
+            </div>
+            <div class="card">
+                <img src="Images/plastic.png" alt="Plastic Bottles">
+                <div class="price">RS 8/KG</div>
+                <div class="item-name">PET BOTTLES/OTHER PLASTIC</div>
+            </div>
+            <div class="card">
+                <img src="Images/iron-removebg-preview.png" alt="Iron">
+                <div class="price">RS 26/KG</div>
+                <div class="item-name">IRON</div>
+                <div class="info">To get quote for bulk qty. Call at +91-8595358613</div>
+            </div>
+            <div class="card">
+                <img src="Images/wire-removebg-preview.png" alt="Iron">
+                <div class="price">RS 26/KG</div>
+                <div class="item-name">WIRE</div>
+                <div class="info">To get quote for bulk qty. Call at +91-8595358613</div>
+            </div>
+            <div class="card">
+                <img src="Images/brass.png" alt="Iron">
+                <div class="price">RS 400/KG</div>
+                <div class="item-name">BRASS</div>
+                <div class="info">To get quote for bulk qty. Call at +91-8595358613</div>
+            </div>
+            <div class="card">
+                <img src="Images/steel-removebg-preview.png" alt="Iron">
+                <div class="price">RS 110/KG</div>
+                <div class="item-name">STAINLESS-STEEL</div>
+                <div class="info">To get quote for bulk qty. Call at +91-8595358613</div>
+            </div>
+            <div class="card">
+                <img src="Images/aulimiun.png" alt="Iron">
+                <div class="price">RS 105/KG</div>
+                <div class="item-name">ALUMINUM</div>
+                <div class="info">To get quote for bulk qty. Call at +91-9696202329</div>
+            </div>
+            <div class="card">
+                <img src="Images/brown_paper-removebg-preview.png" alt="Iron">
+                <div class="price">RS 4/KG</div>
+                <div class="item-name">BROWN-PAPER</div>
+                <div class="info">To get quote for bulk qty. Call at +91-9696202329</div>
+            </div>
+            <div class="card">
+                <img src="Images/cartboard-removebg-preview.png" alt="Iron">
+                <div class="price">RS 5/KG</div>
+                <div class="item-name">CARDBOARD</div>
+                <div class="info">To get quote for bulk qty. Call at +91-9696202329</div>
+            </div>
+            <div class="card">
+                <img src="Images/rubber_tyer-removebg-preview.png" alt="Iron">
+                <div class="price">RS 25/KG</div>
+                <div class="item-name">RUBBER TYER</div>
+                <div class="info">depend upon type and condition </div>
+            </div>
+            <div class="card">
+                <img src="Images/lead_battery-removebg-preview.png" alt="Iron">
+                <div class="price">RS 35/KG</div>
+                <div class="item-name">BATTERY</div>
+                <div class="info"> depend upon type of battery</div>
+            </div>
+            <div class="card">
+                <img src="Images/cotton-removebg-preview.png" alt="Iron">
+                <div class="price">RS 12/KG</div>
+                <div class="item-name">COTTON</div>
+                <div class="info">To get quote for bulk qty. Call at +91-9696202329</div>
+            </div>
+            <div class="card">
+                <img src="Images/mobile_waste-removebg-preview.png" alt="Iron">
+                <div class="price">RS 26.33/KG</div>
+                <div class="item-name">E-WATE</div>
+                <div class="info">depending upon the type of e-waste</div>
+            </div>
+            <div class="card">
+                <img src="Images/wood_plates-removebg-preview.png" alt="Iron">
+                <div class="price">RS 400/KG</div>
+                <div class="item-name">WOOD</div>
+                <div class="info">depending upon the type of wood</div>
+            </div>
+            <div class="card">
+                <img src="Images/tin-removebg-preview.png" alt="Iron">
+                <div class="price">RS 76/KG</div>
+                <div class="item-name">TIN-SHEET</div>
+                <div class="info">To get quote for bulk qty. Call at +91-8595358613</div>
+            </div>
+            <div class="card">
+                <img src="Images/cloathes.png" alt="Iron">
+                <div class="price">only accepted with other scrap</div>
+                <div class="item-name">clothes</div>
+                <div class="info"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Large Appliances</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="Images/geyser-removebg-preview.png" alt="Newspaper">
+                <div class="price">RS 20/KG</div>
+                <div class="item-name">GEYSER</div>
+                <div class="info">Market rates dropped recently</div>
+            </div>
+            <div class="card">
+                <img src="Images/refrigerator-removebg-preview.png" alt="Glass Bottles">
+                <div class="price">RS 500-1500/per unit</div>
+                <div class="item-name">REFRIGERATOR</div>
+                <div class="info">depending upon type and condition</div>
+            </div>
+            <div class="card">
+                <img src="Images/cooler-removebg-preview.png" alt="Books">
+                <div class="price">RS 15/kg</div>
+                <div class="item-name">PLASTIC COOLER</div>
+                <div class="info">depending upon condition</div>
+            </div>
+            <div class="card">
+                <img src="Images/plastic-cooler-removebg-preview.png" alt="Plastic Bottles">
+                <div class="price">RS 30/kg</div>
+                <div class="item-name">IRON COOLER</div>
+                <div class="info">Depend upon iron condition</div>
+            </div>
+            <div class="card">
+                <img src="Images/fan-removebg-preview.png" alt="Iron">
+                <div class="price">RS 35/KG</div>
+                <div class="item-name">FAN</div>
+                <div class="info">depending upon size of fan/type</div>
+            </div>
+            <div class="card">
+                <img src="Images/micro-wave-removebg-preview.png" alt="Iron">
+                <div class="price">RS 100-200 per unit</div>
+                <div class="item-name">MICRO-WAVE</div>
+                <div class="info">depend upon market rate</div>
+            </div>
+            <div class="card">
+                <img src="Images/washing_machine-removebg-preview.png" alt="Iron">
+                <div class="price">RS 850/KG</div>
+                <div class="item-name">WASHING MACHINE</div>
+                <div class="info">depend upon type of washing machine </div>
+            </div>
+            <div class="card">
+                <img src="Images/ac-removebg-preview.png" alt="Iron">
+                <div class="price">RS 4000 TON</div>
+                <div class="item-name">SPLIT AC</div>
+                <div class="info"></div>
+            </div>
+            <div class="card">
+                <img src="Images/window_AC-removebg-preview.png" alt="Iron">
+                <div class="price">RS 3000 TON</div>
+                <div class="item-name">WINDOW AC</div>
+                <div class="info"></div>
+            </div>
+            <div class="card">
+                <img src="Images/MOTOR-removebg-preview.png" alt="Iron">
+                <div class="price">RS 100/KG</div>
+                <div class="item-name">MOTOR</div>
+                <div class="info">Dpend upon type of motor </div>
+            </div>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>

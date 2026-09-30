@@ -1,0 +1,187 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+.background{
+    background-color: #006666;
+    height: 25%;
+    width: 100%;
+}
+
+/* Header */
+header {
+    position: absolute;
+    top: 25px;
+    left: 40px;
+    font-size: 40px;  /* BIGGER */
+    font-weight: bold;
+    color: white;
+}
+img{
+    width: 300px;
+    height: 300px;
+}
+
+.logo {
+    color: white;
+    font-size: 40px; /* Increased */
+    font-weight: bold;
+    position: relative;
+    top: -100px;
+    top: -85px;
+    margin-left: -55px;
+}
+
+.logo span {
+    color: #00cccc;
+}
+
+/* Main Container - BIG SIZE */
+.container {
+    background: white;
+    padding: 70px;
+    border-radius: 25px;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 1100px;
+    position: relative;
+}
+
+/* Title */
+.card h2 {
+    margin-bottom: 35px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* Layout */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+/* Left Form Section */
+.form-section {
+    flex: 1;
+    text-align: left;
+}
+
+/* Input Groups - MAX SIZE */
+.input-group {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.input-group label {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 20px;
+    border: 3px solid #bbb;
+    border-radius: 10px;
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+/* Right Upload Section */
+.upload-section {
+    flex: 1;
+    text-align: center;
+}
+
+/* Upload Box - BIG SQUARE */
+.upload-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border: 4px dashed #009999;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #009999;
+    font-size: 24px;
+    margin: 0 auto;
+}
+
+.upload-box:hover {
+    color: #006666;
+}
+
+/* Video Preview */
+video {
+    display: none;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+/* Coins Display */
+.coins-display {
+    font-weight: bold;
+    margin: 30px 0;
+    color: #009999;
+    font-size: 26px;
+}
+
+/* Info Text */
+.info-text {
+    font-size: 22px;
+    color: gray;
+    margin-bottom: 25px;
+}
+
+/* Upload & Earn Button - BIG SIZE */
+.upload {
+    background: #009999;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 12px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.upload:hover {
+    background: #007777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .upload-box {
+        width: 150px;
+        height: 250px;
+    }
+}

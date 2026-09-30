@@ -1,0 +1,54 @@
+2025-04-25 04:00:41,538 - INFO - YOLO model loaded successfully.
+2025-04-25 04:00:41,541 - INFO - Database setup complete
+2025-04-25 04:00:41,592 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.117.110:5000
+2025-04-25 04:00:41,593 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-25 04:00:41,598 - INFO -  * Restarting with stat
+2025-04-25 04:00:47,211 - INFO - YOLO model loaded successfully.
+2025-04-25 04:00:47,213 - INFO - Database setup complete
+2025-04-25 04:00:47,229 - WARNING -  * Debugger is active!
+2025-04-25 04:00:47,232 - INFO -  * Debugger PIN: 659-368-378
+2025-04-25 04:07:13,974 - INFO -  * Detected change in 'C:\\Users\\ASUS\\Desktop\\Web Development\\BinZ-Project\\GarbageDetector\\server.py', reloading
+2025-04-25 04:07:14,689 - INFO -  * Restarting with stat
+2025-04-25 04:07:20,935 - INFO - YOLO model loaded successfully.
+2025-04-25 04:07:20,937 - INFO - Database setup complete
+2025-04-25 04:07:20,956 - WARNING -  * Debugger is active!
+2025-04-25 04:07:20,959 - INFO -  * Debugger PIN: 659-368-378
+2025-04-25 04:13:52,875 - INFO - YOLO model loaded successfully.
+2025-04-25 04:13:52,878 - INFO - Database setup complete
+2025-04-25 04:13:52,911 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.117.110:5000
+2025-04-25 04:13:52,911 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-25 04:13:52,914 - INFO -  * Restarting with stat
+2025-04-25 04:13:58,719 - INFO - YOLO model loaded successfully.
+2025-04-25 04:13:58,721 - INFO - Database setup complete
+2025-04-25 04:13:58,734 - WARNING -  * Debugger is active!
+2025-04-25 04:13:58,736 - INFO -  * Debugger PIN: 659-368-378
+2025-04-25 04:17:13,645 - INFO -  * Detected change in 'C:\\Users\\ASUS\\Desktop\\Web Development\\BinZ-Project\\GarbageDetector\\GarbageDetectorLive.py', reloading
+2025-04-25 04:17:14,089 - INFO -  * Detected change in 'C:\\Users\\ASUS\\Desktop\\Web Development\\BinZ-Project\\GarbageDetector\\GarbageDetectorLive.py', reloading
+2025-04-25 04:17:14,589 - INFO -  * Restarting with stat
+2025-04-25 04:17:14,991 - INFO -  * Restarting with stat
+2025-04-25 04:17:21,785 - INFO - YOLO model loaded successfully.
+2025-04-25 04:17:21,788 - INFO - Database setup complete
+2025-04-25 04:17:21,812 - WARNING -  * Debugger is active!
+2025-04-25 04:17:21,819 - INFO -  * Debugger PIN: 659-368-378
+2025-04-25 04:17:21,892 - INFO - YOLO model loaded successfully.
+2025-04-25 04:17:21,896 - INFO - Database setup complete
+2025-04-25 04:17:21,918 - WARNING -  * Debugger is active!
+2025-04-25 04:17:21,922 - INFO -  * Debugger PIN: 659-368-378
+2025-04-25 04:25:38,970 - INFO - YOLO model loaded successfully.
+2025-04-25 04:25:38,982 - INFO - Database setup complete
+2025-04-25 04:25:39,033 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.117.110:5000
+2025-04-25 04:25:39,034 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-25 04:25:39,036 - INFO -  * Restarting with stat
+2025-04-25 04:25:43,599 - INFO - YOLO model loaded successfully.
+2025-04-25 04:25:43,601 - INFO - Database setup complete
+2025-04-25 04:25:43,616 - WARNING -  * Debugger is active!
+2025-04-25 04:25:43,620 - INFO -  * Debugger PIN: 659-368-378

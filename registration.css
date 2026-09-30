@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: inherit;
+    margin: 0%;
+    padding: 0%;
+}
+html{
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo{
+    height: 260px;
+    width: 300px;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.text{
+    margin-left: 640px;
+    /* font-weight: bold; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+}
+.right-image{
+    height: 817px;
+    width: 653px;
+}
+.form-container{
+    display: flex;
+    width: 834px;
+    height: 750px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 14px rgb(55, 55, 55);
+    margin-top: -60px;
+}
+.input{
+    display: flex;
+}
+.container{
+    display: flex;
+}
+.take{
+    border-radius: 6px;
+    width: 345px;
+    height: 52px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding: 24px;
+}
+.first-text{
+    margin-left: 63px;
+    margin-right: 29px;
+}
+.input{
+    margin-top: 60px;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+.email1{
+    height: 52px;
+    border-radius: 6px;
+    padding: 20px;
+    font-size: 20px;
+    margin-right: 50px;
+}
+.password{
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+.password1{
+    height: 52px;
+    border-radius: 6px;
+    padding: 20px;
+    font-size: 20px;
+    margin-right: 50px;
+}
+.Re-enter{
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+.re{
+    height: 52px;
+    border-radius: 6px;
+    padding: 20px;
+    font-size: 20px;
+}
+.submit{
+    margin-top: 50px;
+    text-align:  center;
+}
+.register-button {
+    background: rgba(1, 106, 112, 1);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 55px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    text-align: center;
+    font-family: 'Poppins';
+}
+.register-button:hover {
+    background: rgba(1, 90, 95, 1);
+    box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.3);
+}
+.register-button:active {
+    transform: scale(0.98);
+}
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between buttons */
+    margin-top: 20px;
+}
+
+.google-btn, .facebook-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.google-btn img, .facebook-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+.google-btn:hover, .facebook-btn:hover {
+    background-color: #f8f8f8;
+}
+
+.facebook-btn img {
+    border-radius: 50%;
+}
+.or{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Poppins';
+    font-weight: 16px;
+}
+.login-text {
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #444;
+    margin-top: 15px;
+}
+
+.sign-in {
+    font-weight: 600;
+    color: rgba(1, 106, 112, 1); /* Same color as the register button */
+    text-decoration: none;
+}
+
+.sign-in:hover {
+    text-decoration: underline;
+}
+.state-selector {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.state-dropdown {
+    width: 722px;
+    height: 52px;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #000000;
+    background-color: #fff;
+}

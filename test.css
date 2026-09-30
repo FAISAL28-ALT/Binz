@@ -1,0 +1,181 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1A5C51;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    background-color: #1A5C51;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.switch {
+    display: flex;
+    gap: 15px;
+}
+
+.tower {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.zcoinbg {
+    position: relative;
+}
+
+.zcoin img {
+    height: 25px;
+}
+
+.protfolio img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.right-pot {
+    color: white;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.out .exit1 img {
+    height: 30px;
+}
+
+/* Account Box */
+.container {
+    width: 80%;
+    max-width: 900px;
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-top: 80px;
+}
+
+.account-box h2 {
+    color: #1A5C51;
+    font-size: 24px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Upload Section */
+.upload-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.upload-box {
+    border: 2px dashed #ccc;
+    padding: 30px;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-box img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.upload-btn {
+    background-color: #1A5C51;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Delete Account Text */
+.delete-text {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.delete-text a {
+    color: #1A5C51;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cancel {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.update {
+    background-color: #1A5C51;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}

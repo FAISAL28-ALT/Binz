@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+.main-content{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.logo{
+    height: 260px;
+    width: 300px;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.LogIN{
+   margin-left: 210px;
+    /* font-weight: bold; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: -110px;
+    text-align: center;
+}
+.right-image{
+    height: 840px;
+    width: 670px;
+}
+.from{
+    display: flex;
+    margin-top: 20px;
+}
+.from-container{
+    width: 834px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 14px rgb(55, 55, 55);
+    height: 650px;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-top: 55px;
+    margin-right: 60px;
+}
+.email1{
+    height: 52px;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+}
+.pass{
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-top: 30px;
+    margin-right: 60px;
+}
+.password1{
+    height: 52px;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+}
+.container2 {
+        display: flex;
+        font-family: 'Poppins';
+        margin-left: 60px;
+        margin-top: 30px;
+        margin-right: 60px;
+        font-weight: 600;
+        font-size: 16px;
+}
+.check{
+    width: 24px;
+    height: 24px;
+}
+.remeber{
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+a:hover {
+    text-decoration: underline;
+}
+.submit{
+    margin-top: 50px;
+    text-align:  center;
+}
+.register-button {
+    background: rgba(1, 106, 112, 1);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 55px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    text-align: center;
+    font-family: 'Poppins';
+}
+.register-button:hover {
+    background: rgba(1, 90, 95, 1);
+    box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.3);
+}
+.register-button:active {
+    transform: scale(0.98);
+}
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between buttons */
+    margin-top: 20px;
+}
+
+.google-btn, .facebook-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.google-btn img, .facebook-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+.google-btn:hover, .facebook-btn:hover {
+    background-color: #f8f8f8;
+}
+
+.facebook-btn img {
+    border-radius: 50%;
+}
+.or{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Poppins';
+    font-weight: 16px;
+}
+.login-text {
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #444;
+    margin-top: 15px;
+}
+
+.sign-in {
+    font-weight: 600;
+    color: rgba(1, 106, 112, 1); /* Same color as the register button */
+    text-decoration: none;
+}
+
+.sign-in:hover {
+    text-decoration: underline;
+}

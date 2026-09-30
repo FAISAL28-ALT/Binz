@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="Images/my-logo.png" alt="">
+         </div>
+            <div class="text">
+                Registration
+         </div>
+    </div>
+    <div class="container">
+         <div class="right-image">
+            <img src="Images/Component 1.png" alt="">
+         </div>
+         <div class="form-container">
+        <form id="registrationForm" action="">
+            <div class="input">
+                <div class="first-text">
+                    <div style="    font-family: 'Poppins', sans-serif;
+                    font-size: 20px;
+                    font-weight: 500;">First Name</div>
+                    <input id="firstName" class="take" type="text"placeholder="FIRST NAME">
+                </div>
+                <div class="second-text">
+                    <div style="    font-family: 'Poppins', sans-serif;
+                    font-size: 20px;
+                    font-weight: 500;">Last name</div>
+                    <input id="lastName" class="take" type="text" placeholder="LAST NAME">
+                </div>
+              </div>
+              <div class="input-second">
+                <div class="email" style="font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+                font-weight: 500;">
+                    Email
+                    <input id="email" class="email1" type="email"placeholder="EMAIL">
+                </div>
+                <div class="password" style="font-family: 'Poppins', sans-serif; font-size: 20px; font-weight: 500;">
+                    Password
+                    <input id="password" class="password1" type="password"placeholder="PASSWORD">
+                    <p id="passwordMessage" style="color: red; font-size: 14px; margin-top: 5px;"></p>
+                </div>
+                <div class="state-selector">
+                    <label for="state">Select Location</label>
+                    <select id="state" class="state-dropdown">
+                        <option value="">--Select Location--</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Bihar">Bihar</option>
+                    </select>
+                </div>
+                <div class="submit">
+                    <button type="submit" class="register-button" id="registerBtn" >Register</button>
+                </div>
+                <div class="or">
+                    OR
+                </div>
+                <div class="social-buttons">
+                    <button class="google-btn">
+                        <img src="Images/google-png.png" alt="Google Logo"> Sign up with Google
+                    </button>
+                    <button class="facebook-btn">
+                        <img src="Images/facebook 1.png" alt="Facebook Logo"> Sign up with Facebook
+                    </button>
+                </div>
+                <div class="login-text">
+                    Already have an account? <a href="sign.html" class="sign-in">Sign in</a>
+                </div>
+                
+              </div>
+             </div>
+        </form>
+    </div>
+    <script src="registration.js"></script>
+</body>
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BinZ</title>
+    <link rel="stylesheet" href="home-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="carbon.css">
+
+<body>
+    
+    <div class="binz">
+        <div class="upper">
+            <!-- NAVBAR -->
+            <div class="navbar">
+                <div class="logo">
+                    <img src="Images/my-logo.png" alt="logo">
+                </div>
+                <div class="switch">
+                    <button class="tower" onclick="window.location.href='home-page.html';">Home</button>
+                    <button class="tower" onclick="window.location.href='Scrap.html';">Scrap</button>
+                    <button class="tower" onclick="window.location.href='upload.html';">Earn Coins</button>
+                    <button class="tower">Service</button>
+                </div>
+                <div class="profile">
+                    <div class="zcoinbg">
+                        <div style="position: absolute;top: -13px; right: -3px;">
+                        <div id="coin">5</div>
+                    <div class="zcoin">
+                        <img src="Images/Z-coin.png" alt="">
+                    </div>
+                </div>
+                </div>
+                    <div class="protfolio">
+                        <img src="Images/pofile.png" alt="profile">
+                    </div>
+                    <div class="right-pot">
+                        <div class="welcome">
+                            Welcome, 
+                        </div>
+                        <div class="name" id="username">
+                            Ahsan
+                        </div>
+                    </div>
+
+                </div>
+                <div class="out">
+                    <button id="logoutBtn" class="exit1" onclick="window.location.href='sign.html';" style="background-color: white;"><img src="Images/st-removebg-preview.png" alt="exit"></button>
+                </div>
+            </div>
+
+            <!-- 1ST PAGE -->
+             <div class="outer">
+                <div class="inner1">
+                    <div class="text first">Put Your Trash</div>
+                    <div class="text Second">We do Collect and Recycle</div>
+                    <div class="text Third">We do prioritize the fulfillment of customer needs for a product and service, rather than solely focusing on the <br> creation of a new
+                        "eco-product" that may not have a demand, enabling the regular market forces to come into <br> play, operating based on the principles of<br>
+                        supply and demand.</div>
+                    <div class="book">
+                        <input type="text" id="phoneNumber" placeholder="+91" maxlength="10">
+                         <button id="bookBtn" style="border: 1px solid black;">📞 Book</button>
+                    </div>
+                </div>
+                <div class="inner2">
+                    <img src="Images/main-page-1stimg.png" alt="">
+                </div>
+             </div>
+             
+        </div>
+        <div class="boxes">
+            <div class="box1">
+                <div class="texts">
+             <div class="first-text">± 00 Kilos</div>
+             <div class="second-text">Waste Recycled</div>
+            </div>
+        </div>
+            <div class="box2">
+                <div class="texts">
+             <div class="first-text1">± 00 Kilos</div>
+             <div class="second-text1">Recycled Plastic Bottle</div>
+            </div>
+            </div>
+         </div>
+         <div class="text-middle">
+            <div class="text-one">
+                Interested in Selling?
+            </div>
+            <div class="text-two">Waste is also valuable</div>
+            <div class="text-three">We are looking to recover and distribute high-quality waste plastic at the same time building a circular economy that ensures recovery of the material to <br> re-enters the supply chain of good waste management system</div>
+         </div>
+         <!-- Puchase Element Boxes -->
+          <div class="first-row">
+         <div class="purchase">
+            <div class="backg">
+                <div class="bottle"><img src="Images/Bottle of Water.png" alt=""></div>
+            </div>
+            <div>
+            <div class="holder">Plastic Bottle</div>
+            <div style="color: rgba(1, 106, 112, 1); text-align: center; font-family: 'Poppins', sans-serif; font-size: 20px;">-₹15/Kg</div>
+        </div>
+            <button class="sell-b">Sell Now</button>
+         </div>
+         <div class="purchase">
+            <div class="backg">
+                <div class="bottle" style="height: 159px;
+                width: 133px;
+                margin-left: 12px"><img src="Images/steel.png" alt=""></div>
+            </div>
+            <div>
+            <div class="holder">Steel</div>
+            <div style="color: rgba(1, 106, 112, 1); text-align: center;  font-family: 'Poppins', sans-serif; font-size: 20px;">-₹110/Kg</div>
+        </div>
+            <button class="sell-b">Sell Now</button>
+         </div>
+         <div class="purchase">
+            <div class="backg">
+                <div class="bottle"><img src="Images/news.png" alt=""></div>
+            </div>
+            <div>
+            <div class="holder">NewsPaper</div>
+            <div style="color: rgba(1, 106, 112, 1); text-align: center;  font-family: 'Poppins', sans-serif; font-size: 20px;">-₹15/Kg</div>
+        </div>
+            <button class="sell-b">Sell Now</button>
+         </div>
+         <div class="purchase">
+            <div class="backg">
+                <div class="bottle" style=" height: 164px;"><img src="Images/upscalemedia-transformed__2_-removebg-preview-removebg-preview.png" alt=""></div>
+            </div>
+            <div>
+            <div class="holder">Aluminium</div>
+            <div style="color: rgba(1, 106, 112, 1); text-align: center;  font-family: 'Poppins', sans-serif; font-size: 20px;">-₹105/Kg</div>
+        </div>
+            <button class="sell-b">Sell Now</button>
+         </div>
+        </div>
+        <div class="second-row">
+            <div class="purchase" style="    margin-right: 49px;">
+                <div class="backg">
+                    <div class="bottle"><img src="Images/copper.png" alt=""></div>
+                </div>
+                <div>
+                <div class="holder">Copper Wire</div>
+                <div style="color: rgba(1, 106, 112, 1); text-align: center;  font-family: 'Poppins', sans-serif; font-size: 20px;">-₹60/Kg</div>
+            </div>
+                <button class="sell-b">Sell Now</button>
+             </div>
+             <div class="purchase">
+                <div class="backg">
+                    <div class="bottle"><img src="Images/Cardboard Box.png" alt=""></div>
+                </div>
+                <div>
+                <div class="holder">Cardboard</div>
+                <div style="color: rgba(1, 106, 112, 1); text-align: center;  font-family: 'Poppins', sans-serif; font-size: 20px;">-₹18/Kg</div>
+            </div>
+                <button class="sell-b">Sell Now</button>
+             </div>
+            </div>   
+             <section id="environmental-tracker" class="tracker-card">
+  <h2>Your Environmental Contribution</h2>
+  <form id="dataForm" class="tracker-form">
+    <input type="date" id="date" required />
+    <input type="number" id="solid" placeholder="Solid Waste (kg)" required />
+    <input type="number" id="ewaste" placeholder="E-Waste (kg)" required />
+    <button type="submit">Add Entry</button>
+  </form>
+
+  <p class="total-co2">Total CO₂ emissions reduced: <span id="totalSaved" class="highlight">0</span> kg</p>
+
+  <div class="tracker-charts">
+    <div class="chart-block">
+      <h3>CO₂ Reduction Over Time</h3>
+      <canvas id="lineChart"></canvas>
+    </div>
+    <div class="chart-block">
+      <h3>Contribution by Waste Type</h3>
+      <canvas id="pieChart"></canvas>
+    </div>
+  </div>
+</section>
+
+<!-- Chart.js script (load only once in the landing page) -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const emissionFactors = {
+    solid: 0.2,
+    ewaste: 1.5,
+  };
+
+  let userData = [];
+
+  const lineChartCtx = document.getElementById("lineChart").getContext("2d");
+  const pieChartCtx = document.getElementById("pieChart").getContext("2d");
+
+  const lineChart = new Chart(lineChartCtx, {
+    type: 'line',
+    data: {
+      labels: [],
+      datasets: [
+        {
+          label: 'Solid Waste CO₂',
+          data: [],
+          borderColor: '#4ade80',
+          backgroundColor: 'rgba(74, 222, 128, 0.2)',
+          tension: 0.4
+        },
+        {
+          label: 'E-Waste CO₂',
+          data: [],
+          borderColor: '#60a5fa',
+          backgroundColor: 'rgba(96, 165, 250, 0.2)',
+          tension: 0.4
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        tooltip: {
+          mode: 'index',
+          intersect: false
+        },
+        legend: {
+          position: 'top'
+        }
+      },
+      scales: {
+        y: {
+          title: {
+            display: true,
+            text: 'kg CO₂'
+          }
+        }
+      }
+    }
+  });
+
+  const pieChart = new Chart(pieChartCtx, {
+    type: 'pie',
+    data: {
+      labels: ['Solid Waste', 'E-Waste'],
+      datasets: [{
+        data: [0, 0],
+        backgroundColor: ['#4ade80', '#60a5fa']
+      }]
+    },
+    options: {
+      responsive: true
+    }
+  });
+
+  function updateCharts() {
+    const processed = userData.map(entry => ({
+      ...entry,
+      solidCO2: entry.solid * emissionFactors.solid,
+      ewasteCO2: entry.ewaste * emissionFactors.ewaste,
+      totalCO2: entry.solid * emissionFactors.solid + entry.ewaste * emissionFactors.ewaste
+    }));
+
+    const totalSaved = processed.reduce((sum, e) => sum + e.totalCO2, 0);
+    document.getElementById("totalSaved").textContent = totalSaved.toFixed(2);
+
+    lineChart.data.labels = processed.map(e => e.date);
+    lineChart.data.datasets[0].data = processed.map(e => e.solidCO2);
+    lineChart.data.datasets[1].data = processed.map(e => e.ewasteCO2);
+    lineChart.update();
+
+    const totalSolid = processed.reduce((sum, e) => sum + e.solidCO2, 0);
+    const totalEwaste = processed.reduce((sum, e) => sum + e.ewasteCO2, 0);
+
+    pieChart.data.datasets[0].data = [totalSolid, totalEwaste];
+    pieChart.update();
+  }
+
+  document.getElementById("dataForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const date = document.getElementById("date").value;
+    const solid = parseFloat(document.getElementById("solid").value);
+    const ewaste = parseFloat(document.getElementById("ewaste").value);
+
+    if (date && !isNaN(solid) && !isNaN(ewaste)) {
+      userData.push({ date, solid, ewaste });
+      updateCharts();
+      e.target.reset();
+    }
+  });
+</script>
+
+    <div class="leaderboard-container">
+        <h2>Leaderboard Of Uttar Pradesh</h2>
+        <table class="leaderboard">
+            <thead>
+                <tr >
+                    <th>Rank</th>
+                    <th>User ID</th>
+                    <th>Z-Coins</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="first-rank" >
+                    <td>
+                        <img src="Images/first-rank 1.png" alt="1st Rank" class="badge"> 
+                        <span class="name1" id="first-name">John Doe</span>
+                    </td>
+                    <td id="first-id">100</td>
+                    <td class="coins" id="first-coins">1200</td>
+                </tr>
+                <tr class="rt">
+                    <td><span class="rank">2.</span> <span class="name1" id="second-name">Jane Smith</span></td>
+                    <td id="second-id">126</td>
+                    <td class="second-coins">980</td>
+                </tr>
+                <tr class="rt">
+                    <td><span class="rank">3.</span> <span class="name1" id="third-name">Alice Brown</span></td>
+                    <td id="third-id">109</td>
+                    <td class="coins" id="third-coins">870</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="dots">...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="last-portion" id="aboutme">
+        <div class="part-text" style="color: white; font-family: 'Poppins', sans-serif; position: absolute; margin: 100px;">
+            <div class="part1">About us</div>
+            <div class="part2">Goals and Objectives</div>
+            <div class="part3">Our mission is to simplify and revolutionize scrap collection by making it accessible, transparent, and rewarding. Unlike large-scale companies, we focus on local communities, residential areas, and college campuses, ensuring a seamless waste management solution. Through our tech-driven approach, users can easily schedule pickups via a website, app, or WhatsApp, ensuring convenience and fair pricing.
+                We aim to empower local scrap collectors by partnering with them directly, eliminating middlemen, and providing better wages and work opportunities. Additionally, our system introduces reward-based incentives, allowing users to earn discounts or cashback for responsible recycling. By making waste disposal beneficial for both individuals and the environment, we encourage sustainable habits and greater community participation.
+                Starting small and scalable, our model ensures hyper-local impact while laying the groundwork for future expansion. In the long run, we envision integrating AI-driven waste sorting and recycling tracking to optimize the process. Our initiative is more than just scrap collection—it’s about creating a cleaner, greener, and more efficient future while supporting local businesses and environmental sustainability. ♻🚀</div>
+        </div>
+        <div class="picture">
+            <img src="Images/girl-volunteer-collects-garbage-forest-takes-care-environment 1.png" alt="">
+        </div>
+
+    </div>
+
+    <!-- Footer Code -->
+     <div class="footer6">
+        <div class="back">
+            <img  style="    position: absolute;
+            object-fit: contain;
+            height: 610px;"  src="Images/1.png" alt="">
+            <div class="middle">
+                <img style="    position: absolute;
+                object-fit: contain;
+                height: 610px;"  src="Images/2.png" alt="">
+                <div class="front">
+                    <img style="    position: absolute;
+                    object-fit: contain;
+                    height: 610px;"  src="Images/3.png" alt="">
+                    <!-- footer content -->
+                    <div class="last">
+                        <div style=" position: absolute; margin-left: 155px; margin-top: 100px;">
+                        <img  class="logo2" src="Images/my-logo.png" alt="">
+                     <div class="text-23">
+                        <div style="margin-bottom: 20px;">Address : Greater Noida</div>
+                        <div>+91 9696202329 <br>
+                            binz@services.id</div>
+                     </div>
+                     <div class="area2" style="font-family: 'Poppins', sans-serif;">
+                     <div class="footer-column">
+                        <h3>Company</h3>
+                        <a href="#aboutme">About</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Mobile</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact</h3>
+                        <a href="#">Help/FAQ</a>
+                        <a href="#">Press</a>
+                        <a href="#">Affiliates</a>
+                    </div>
+                    <!-- <div class="footer-column">
+                        <h3>More</h3>
+                        <a href="#">Airline Fees</a>
+                        <a href="#">Airline</a>
+                        <a href="#">Low Fare Tips</a>
+                    </div> -->
+                </div>
+                    </div>
+                 </div>
+                 </div>
+                 </div>
+                </div>
+            </div>
+        </div>
+        <div class="lastcolor"></div>
+        <!-- Floating Chat Button -->
+    <button id="chat-toggle" class="floating-btn">💬</button>
+
+    <!-- Chat Container (Initially Hidden) -->
+    <div id="chat-container" class="chat-container hidden">
+        <div class="chat-header">
+            <h2>Z-Chat Support</h2>
+            <button id="close-chat" class="close-btn">❌</button>
+        </div>
+        <div class="chat-buttons">
+            <button onclick="showSection('about')">About Us</button>
+            <button onclick="showSection('schedule')">Schedule Service</button>
+            <button onclick="redirectToPage('/pricing')">Pricing</button>
+            <button onclick="showSection('contact')">Contact Us</button>
+            <button onclick="showSection('ewaste')">Know About E-Waste</button> <!-- New Button -->
+        </div>
+        <div id="content-area"></div>
+    </div>
+     </div>
+    <script src="js.js"></script>
+</body>
+</html>
